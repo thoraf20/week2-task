@@ -1,0 +1,18 @@
+body{
+    background-color: slategray;
+}
+
+.header-text{
+    text-align: center;
+}
+.character-image > img{
+    height:250px;
+    width:200px;
+}
+
+.character-image{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap:10px;
+    justify-content: center;
+}
