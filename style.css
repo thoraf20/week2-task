@@ -1,9 +1,19 @@
 body{
-    background-color: slategray;
+    background-color:lightslategray ;
+    border : 2px solid chocolate;
+}
+
+.root{
+    text-align: center;;
 }
 
 .header-text{
     text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
 }
 .character-image > figure > img{
     height:250px;
@@ -13,6 +23,19 @@ body{
 .character-image{
     display:grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-gap:10px;
     justify-content: center;
+    margin-left: 130px;
+}
+
+ul{
+    list-style: none;
+}
+
+.response{
+    padding-left: 50px;
+    margin: 4px;
+}
+
+.character-details{
+    width:170px;
 }
