@@ -4,8 +4,39 @@ body{
     text-align: center;
 }
     
+/* Style the search field */
+form.searchButton input[type=text] {
+    padding: 2px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+  }
 
+  /* Style the submit button */
+form.searchButton button {
+    float: left;
+    width: 20%;
+    padding: 2px;
+    background :black;
+    color: white;
+    font-size: 15px;
+    border: 1px solid black;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
     
+  form.searchButton button:hover {
+    background:yellow;
+  }
+  
+  /* Clear floats */
+  form.searchButton::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .logo > img{
     height:50%;
@@ -20,10 +51,12 @@ header{
 
 .nav{
     padding-left:55px;
+    display :flex;
+    justify-content: space-between;
 }
 
 .nav > a{
-    margin-left: 35px;
+    margin-left: 65px;
     color:yellow;
 }
 

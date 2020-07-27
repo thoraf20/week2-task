@@ -15,7 +15,7 @@ const charImgs = [
     "./week2-images/darklighter.jpg",
     "./week2-images/kenobi.jpg",
 ]
-
+//fetch data and convert to json
 async function fetchUrl(url){
     return fetch(url)
     .then(res => res.json())
@@ -29,11 +29,14 @@ const addClick = () => {
          data.addEventListener("click", displayDetail)
      })
 }
+//respond to click event
 function displayDetail(evt){
     evt.preventDefault();
     document.querySelectorAll(".charDetail").forEach(data => data.childNodes[5].classList.add("hide"));
     this.childNodes[5].classList.toggle("hide");
 }
+
+
 const userDetails = (user) => {
     return (`
         <figure class = "charDetail" data-id = ${user.id}>
