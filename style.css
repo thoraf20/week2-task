@@ -73,6 +73,10 @@ figure > img{
     border-radius:20px;
 }
 
+figure > img:hover{
+    cursor:pointer;
+}
+
 
 .fade{
     display: flex;
